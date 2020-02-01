@@ -108,6 +108,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XAeL0jOBHV9hmIoU5hRjMlGgdO" />
@@ -316,10 +317,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580577778975" />
-    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580580616623">
+    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580582227699">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580580616623" />
+    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580582227699" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1580582427179">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
     <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580582139549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -352,6 +357,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1865" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
+    <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580582427172">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427172" />
+    <state x="712" y="275" key="git4idea.merge.GitMergeDialog" timestamp="1580582397654">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="712" y="275" key="git4idea.merge.GitMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582397654" />
     <state x="342" y="239" key="new project wizard" timestamp="1580494770673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
