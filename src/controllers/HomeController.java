@@ -18,6 +18,6 @@ public class HomeController {
     }
     @FXML
     public void initialize(){
-        title.setStyle("-fx-font-family: 'Amatic SC Bold'");
+        title.setStyle("-fx-font-family: 'Amatic SC'");
     }
 }

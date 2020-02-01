@@ -11,7 +11,7 @@
    <ImageView fitHeight="675.0" fitWidth="1200.0">
       <Image url="@../images/title_proto.jpg" />
    </ImageView>
-   <Button layoutX="761.0" layoutY="281.0" mnemonicParsing="false" onAction="#change" prefHeight="93.0" prefWidth="386.0" text="CHANGER DE SCENE">
+   <Button layoutX="761.0" layoutY="281.0" mnemonicParsing="false" onAction="#change" prefHeight="93.0" prefWidth="386.0" text="LET'S GO">
       <font>
          <Font name="System Bold" size="47.0" />
       </font></Button>
