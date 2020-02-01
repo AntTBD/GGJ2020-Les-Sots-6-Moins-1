@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Switch et font">
-      <change afterPath="$PROJECT_DIR$/src/classes/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/WaterFall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/briques.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/egouts_sol_bis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/plateforme_alguifiee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tuyaux-bot-good.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tuyaux-top-bad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tuyaux-top-good.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall/W1008.png" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="L'eau à couler">
+      <change afterPath="$PROJECT_DIR$/src/classes/Tuyaux.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/fond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/jauge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/platforme_3d_ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tuyaux-Vert-bad.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/WaterFall.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxmls/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mains/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/briques.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/briques.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/plateforme_alguifiee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tuyaux-bot-good.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tuyaux-Vert-good.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tuyaux-top-bad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tuyaux-Hor-bad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tuyaux-top-good.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tuyaux-Hor-good.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +226,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1580493441838" duration="729000" />
       <workItem from="1580498013203" duration="12511000" />
-      <workItem from="1580545910481" duration="14913000" />
+      <workItem from="1580545910481" duration="25968000" />
     </task>
     <task id="LOCAL-00001" summary="Switch et font">
       <created>1580511663077</created>
@@ -242,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580511663077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="L'eau à couler">
+      <created>1580565557740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580565557740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,57 +253,62 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Switch et font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switch et font" />
+    <MESSAGE value="L'eau à couler" />
+    <option name="LAST_COMMIT_MESSAGE" value="L'eau à couler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580499630191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580499630191" />
-    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1580559409771">
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1580568013834">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580559409771" />
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580568013834" />
+    <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580572672992">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580572672992" />
     <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580551202898">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580551202898" />
-    <state x="544" y="47" key="CommitChangelistDialog2" timestamp="1580511662264">
+    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580565556860">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="544" y="47" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580511662264" />
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580565370908">
+    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580565556860" />
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580576548872">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580565370908" />
-    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580565370908">
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580576548872" />
+    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580576548871">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580565370908" />
-    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580565370907">
+    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580576548871" />
+    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580576548871">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580565370907" />
-    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580565370908">
+    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580576548871" />
+    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580576548871">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580565370908" />
-    <state width="1865" height="211" key="GridCell.Tab.1.bottom" timestamp="1580565041398">
+    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580576548871" />
+    <state width="1865" height="211" key="GridCell.Tab.1.bottom" timestamp="1580569486430">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580565041398" />
-    <state width="1865" height="211" key="GridCell.Tab.1.center" timestamp="1580565041398">
+    <state width="1865" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
+    <state width="1865" height="211" key="GridCell.Tab.1.center" timestamp="1580569486429">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580565041398" />
-    <state width="1865" height="211" key="GridCell.Tab.1.left" timestamp="1580565041398">
+    <state width="1865" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
+    <state width="1865" height="211" key="GridCell.Tab.1.left" timestamp="1580569486429">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580565041398" />
-    <state width="1865" height="211" key="GridCell.Tab.1.right" timestamp="1580565041398">
+    <state width="1865" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
+    <state width="1865" height="211" key="GridCell.Tab.1.right" timestamp="1580569486430">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580565041398" />
+    <state width="1865" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
     <state x="342" y="239" key="new project wizard" timestamp="1580494770673">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -312,24 +317,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1580557959670" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/classes/Scheduler.java</url>
-          <line>12</line>
-          <properties class="classes.Scheduler" method="selectNextAndPlay">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/classes/Scheduler.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,7 @@
 package controllers;
 
 import classes.Scheduler;
-import classes.WaterFall;
+import classes.Tuyaux;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -31,15 +31,14 @@ public class GameController {
     public ImageView waterBotLeft;
     public ImageView waterBotRight;
     public void initialize(){
-        ArrayList<WaterFall> waterFalls = new ArrayList<>(Arrays.asList(new WaterFall(waterMid)
-                ,new WaterFall(waterBotLeft),new WaterFall(waterBotRight)
-                ,new WaterFall(waterTopLeft),new WaterFall(waterTopRight)));
-        Scheduler scheduler = new Scheduler(waterFalls);
-        Timeline tl = new Timeline(new KeyFrame(Duration.millis(5000),event -> {
-             scheduler.selectNextAndPlay(spriteWaterfalls);
+        ArrayList<Tuyaux> tuyauxes = new ArrayList<>(Arrays.asList(new Tuyaux(waterMid,tuyauxMid)
+                ,new Tuyaux(waterBotLeft,tuyauxBotLeft),new Tuyaux(waterBotRight,tuyauxBotRight)
+                ,new Tuyaux(waterTopLeft,tuyauxTopLeft),new Tuyaux(waterTopRight,tuyauxTopRight)));
+        Scheduler scheduler = new Scheduler(tuyauxes);
+        tuyauxes.forEach(tuyaux -> tuyaux.getImgWater().setOnMouseReleased(event ->scheduler.repare(tuyaux) ));
 
-        }));
-        tl.setCycleCount(Animation.INDEFINITE);
-        tl.play();
+        Timeline tlScheduler = new Timeline(new KeyFrame(Duration.millis(5000),event -> scheduler.selectNextAndPlay(spriteWaterfalls)));
+        tlScheduler.setCycleCount(Animation.INDEFINITE);
+        tlScheduler.play();
     }
 }
