@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Level changer">
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/game.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,31 +89,68 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XAeL0jOBHV9hmIoU5hRjMlGgdO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/mains" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\images" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fxmls" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,6 +165,12 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -103,19 +183,13 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="mains.Main" />
       <module name="GGJ2020-Les-Sots-6-Moins-1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,6 +237,18 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -174,29 +260,130 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1580493441838" duration="729000" />
+      <workItem from="1580498013203" duration="12511000" />
+      <workItem from="1580545910481" duration="31596000" />
     </task>
+    <task id="LOCAL-00001" summary="Switch et font">
+      <created>1580511663077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580511663077</updated>
+    </task>
+    <task id="LOCAL-00002" summary="L'eau à couler">
+      <created>1580565557740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580565557740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Animation">
+      <created>1580576642877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580576642877</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Level changer">
+      <created>1580580617360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580580617360</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1302000" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="Switch et font" />
+    <MESSAGE value="L'eau à couler" />
+    <MESSAGE value="Animation" />
+    <MESSAGE value="Level changer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level changer" />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+  <component name="WindowStateProjectService">
+    <state x="452" y="115" key="#Inspections" timestamp="1580580521788">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="452" y="115" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1580580521788" />
+    <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580499630191">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580499630191" />
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1580568013834">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580568013834" />
+    <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580579164539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580579164539" />
+    <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580577778975">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580577778975" />
+    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580582227699">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580582227699" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1580582427179">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580582139549">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
+    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580582139549">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
+    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580582139549">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
+    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580582139549">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
+    <state width="1865" height="211" key="GridCell.Tab.1.bottom" timestamp="1580569486430">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
+    <state width="1865" height="211" key="GridCell.Tab.1.center" timestamp="1580569486429">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
+    <state width="1865" height="211" key="GridCell.Tab.1.left" timestamp="1580569486429">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
+    <state width="1865" height="211" key="GridCell.Tab.1.right" timestamp="1580569486430">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
+    <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580582427172">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427172" />
+    <state x="712" y="275" key="git4idea.merge.GitMergeDialog" timestamp="1580582397654">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="712" y="275" key="git4idea.merge.GitMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582397654" />
+    <state x="342" y="239" key="new project wizard" timestamp="1580494770673">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="239" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1580494770673" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1580557959670">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1580557959670" />
   </component>
 </project>
