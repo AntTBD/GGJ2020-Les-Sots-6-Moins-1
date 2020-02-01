@@ -11,14 +11,14 @@ import javafx.util.Duration;
 import java.util.ArrayList;
 
 
-public class Tuyaux {
+public class Tuyau {
     private ImageView imgWater;
     private ImageView imgSewel;
     private double heightInit;
     private double layoutYInit;
     private int indice;
     private Timeline timeline = new Timeline();
-    public Tuyaux(ImageView imgWater, ImageView imgSewel) {
+    public Tuyau(ImageView imgWater, ImageView imgSewel) {
         this.imgWater = imgWater;
         this.imgSewel = imgSewel;
         heightInit= imgWater.getFitHeight();
@@ -27,11 +27,11 @@ public class Tuyaux {
         indice=0;
     }
     public void animateWaterFalls(ArrayList<Image> spriteWaterFalls){
-        Image img = null;
+        Image img;
         if(imgSewel.getCacheHint().equals(CacheHint.ROTATE)){
-            img=new Image("images/tuyaux-Vert-bad.png");
+            img=new Image("images/tuyaux/tuyau-Vert-bad.png");
         }else {
-            img=new Image("images/tuyaux-Hor-bad.png");
+            img=new Image("images/tuyaux/tuyau-Hor-bad.png");
         }
         imgWater.setVisible(true);
         Timeline tlAppear = new Timeline();
@@ -48,11 +48,11 @@ public class Tuyaux {
     }
     public void stopWaterFalls(){
         timeline.stop();
-        Image img = null;
+        Image img;
         if(imgSewel.getCacheHint().equals(CacheHint.ROTATE)){
-            img=new Image("images/tuyaux-Vert-good.png");
+            img=new Image("images/tuyaux/tuyau-Vert-good.png");
         }else {
-            img=new Image("images/tuyaux-Hor-good.png");
+            img=new Image("images/tuyaux/tuyau-Hor-good.png");
         }
         Timeline tlDismiss = new Timeline();
         tlDismiss.getKeyFrames().addAll(
@@ -66,10 +66,6 @@ public class Tuyaux {
             imgWater.setLayoutY(layoutYInit);
         });
     }
-    public boolean isOpen(){
-        return timeline.getStatus().equals(Animation.Status.RUNNING);
-    }
-
     public ImageView getImgWater() {
         return imgWater;
     }

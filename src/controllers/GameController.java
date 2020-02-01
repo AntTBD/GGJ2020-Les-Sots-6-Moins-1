@@ -1,7 +1,7 @@
 package controllers;
 
 import classes.Scheduler;
-import classes.Tuyaux;
+import classes.Tuyau;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -20,22 +20,30 @@ public class GameController {
             ,new Image("images/waterfall/W1007.png")
             ,new Image("images/waterfall/W1008.png")
     ));
-    public ImageView tuyauxTopRight;
-    public ImageView tuyauxTopLeft;
-    public ImageView tuyauxMid;
-    public ImageView tuyauxBotLeft;
-    public ImageView tuyauxBotRight;
+    public ImageView tuyauTopRight;
+    public ImageView tuyauTopLeft;
+    public ImageView tuyauMid;
+    public ImageView tuyauBotRight;
     public ImageView waterTopLeft;
     public ImageView waterMid;
     public ImageView waterTopRight;
-    public ImageView waterBotLeft;
     public ImageView waterBotRight;
+    public ImageView tuyauBotMid;
+    public ImageView tuyauTopMid;
+    public ImageView waterTopMid;
+    public ImageView waterBotMid;
+    public ImageView waterMidRight;
+    public ImageView tuyauMidRight;
+
     public void initialize(){
-        ArrayList<Tuyaux> tuyauxes = new ArrayList<>(Arrays.asList(new Tuyaux(waterMid,tuyauxMid)
-                ,new Tuyaux(waterBotLeft,tuyauxBotLeft),new Tuyaux(waterBotRight,tuyauxBotRight)
-                ,new Tuyaux(waterTopLeft,tuyauxTopLeft),new Tuyaux(waterTopRight,tuyauxTopRight)));
-        Scheduler scheduler = new Scheduler(tuyauxes);
-        tuyauxes.forEach(tuyaux -> tuyaux.getImgWater().setOnMouseReleased(event ->scheduler.repare(tuyaux) ));
+        ArrayList<Tuyau> tuyaux = new ArrayList<>(Arrays.asList(
+                new Tuyau(waterBotRight,tuyauBotRight),new Tuyau(waterTopRight,tuyauTopRight)
+                ,new Tuyau(waterTopMid,tuyauTopMid),new Tuyau(waterMid,tuyauMid)
+                ,new Tuyau(waterBotMid,tuyauBotMid),new Tuyau(waterMidRight,tuyauMidRight)
+                ,new Tuyau(waterTopLeft,tuyauTopLeft)
+        ));
+        Scheduler scheduler = new Scheduler(tuyaux);
+        tuyaux.forEach(tuyau -> tuyau.getImgWater().setOnMouseReleased(event ->scheduler.repare(tuyau) ));
 
         Timeline tlScheduler = new Timeline(new KeyFrame(Duration.millis(5000),event -> scheduler.selectNextAndPlay(spriteWaterfalls)));
         tlScheduler.setCycleCount(Animation.INDEFINITE);

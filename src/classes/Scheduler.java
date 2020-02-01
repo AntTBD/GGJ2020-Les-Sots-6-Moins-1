@@ -4,20 +4,20 @@ import javafx.scene.image.Image;
 import java.util.ArrayList;
 
 public class Scheduler {
-    private ArrayList<Tuyaux> tuyauxes;
-    public Scheduler(ArrayList<Tuyaux> tuyauxes) {
-        this.tuyauxes = tuyauxes;
+    private ArrayList<Tuyau> tuyaux;
+    public Scheduler(ArrayList<Tuyau> tuyaux) {
+        this.tuyaux = tuyaux;
     }
     public void selectNextAndPlay(ArrayList<Image> spriteWaterFalls){
-        if(!tuyauxes.isEmpty()) {
-            int random = (int) (Math.random() * tuyauxes.size());
-            Tuyaux selected = tuyauxes.get(random);
-            tuyauxes.remove(random);
+        if(!tuyaux.isEmpty()) {
+            int random = (int) (Math.random() * tuyaux.size());
+            Tuyau selected = tuyaux.get(random);
+            tuyaux.remove(random);
             selected.animateWaterFalls(spriteWaterFalls);
         }
     }
-    public void repare(Tuyaux tuyaux){
-        tuyaux.stopWaterFalls();
-        tuyauxes.add(tuyaux);
+    public void repare(Tuyau tuyau){
+        tuyau.stopWaterFalls();
+        tuyaux.add(tuyau);
     }
 }
