@@ -150,7 +150,6 @@ public class GameController {
         spritesSaut.add(new Image("images/perso/saute/images/perso_saute_03.png"));
         spritesSaut.add(new Image("images/perso/saute/images/perso_saute_04.png"));
         spritesSaut.add(new Image("images/perso/saute/images/perso_saute_05.png"));
-        spritesSaut.add(new Image("images/perso/saute/images/perso_saute_06.png"));
 
         Timeline tlBase = new Timeline();
         spritesGrav = new ArrayList<>();
@@ -180,6 +179,11 @@ public class GameController {
         tlCourse.setCycleCount(Animation.INDEFINITE);
         tlCourse.getKeyFrames().add(0, new KeyFrame(Duration.millis(60), e -> {
             animation.setLayoutX(animation.getLayoutX() + distance);
+            if(animation.getLayoutX()<=-30){
+                animation.setLayoutX(1225);
+            }else if(animation.getLayoutX()>=1250){
+                animation.setLayoutX(-25);
+            }
             if (!enSaut) {
                 for (ImageView plateforme : liste_plateforme) {
                     if (animation.getLayoutY() < 500) {
@@ -260,9 +264,7 @@ public class GameController {
                     scheduler.repare(tuyau);
                 }
             }
-
         }
-
     }
 
     public void halte(KeyEvent keyEvent) {
@@ -274,18 +276,18 @@ public class GameController {
             tlCourse.stop();
         }
     }
-
-    public ImageView nearTuyau(ImageView perso, ArrayList<ImageView> waters) {
-        for (ImageView wat : waters) {
-            double distX = perso.getLayoutX() - (wat.getLayoutX() + wat.getFitWidth() / 2);
-            double distY = Math.abs(perso.getLayoutY() - (perso.getFitHeight() / 2) - wat.getLayoutY());
-            if (distY <= 40) {
-                if (perso.getScaleX() > 0) {
-                    if (distX <= 15 && distX >= -50) {
+    public ImageView nearTuyau(ImageView perso,ArrayList<ImageView> waters){
+        for (ImageView wat:waters) {
+            System.out.println("perso"+perso.getLayoutX()+" t :"+wat.getLayoutX());
+            double distX = perso.getLayoutX()-(wat.getLayoutX()+wat.getFitWidth()/2);
+            double distY = Math.abs(perso.getLayoutY()-(perso.getFitHeight()/2)-wat.getLayoutY());
+            if(distY<=40){
+                if(perso.getScaleX()>0){
+                    if(distX<=20 && distX>=-65){
                         return wat;
                     }
-                } else {
-                    if (distX >= -15 && distX <= 50) {
+                }else {
+                    if(distX>=-20 && distX<=65){
                         return wat;
                     }
                 }
