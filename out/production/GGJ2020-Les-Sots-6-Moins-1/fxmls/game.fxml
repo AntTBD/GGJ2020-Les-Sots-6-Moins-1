@@ -1,80 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#deplacement" onKeyReleased="#halte" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameController">
-   <ImageView fitHeight="713.0" fitWidth="1200.0" focusTraversable="true" preserveRatio="true">
-      <Image url="@../images/fond.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauTopMid" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="416.0" layoutY="30.0" preserveRatio="true">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauMidRight" cacheHint="SPEED" fitHeight="32.0" fitWidth="188.0" focusTraversable="true" layoutX="875.0" layoutY="268.0" preserveRatio="true" rotate="-90.0">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauMid" fitHeight="39.0" fitWidth="188.0" focusTraversable="true" layoutX="287.0" layoutY="267.0" preserveRatio="true">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauBotRight" cacheHint="ROTATE" fitHeight="161.0" fitWidth="58.0" focusTraversable="true" layoutX="1116.0" layoutY="350.0" preserveRatio="true">
-      <Image url="@../images/tuyaux/tuyau-Vert-good.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauBotMid" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="445.0" layoutY="403.0" preserveRatio="true">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme2" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="317.0" layoutY="118.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme0" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="84.0" layoutY="218.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fitHeight="197.0" fitWidth="119.0" focusTraversable="true" layoutX="1088.0" layoutY="9.0">
-      <Image url="@../images/jauge.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme1" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="258.0" layoutY="375.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme3" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="503.0" layoutY="256.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme4" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="712.0" layoutY="190.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme5" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="782.0" layoutY="357.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="plateforme6" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="947.0" layoutY="134.0">
-      <Image url="@../images/platforme_3d_ok.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauTopRight" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="791.0" layoutY="75.0" preserveRatio="true">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="tuyauTopLeft" cacheHint="SPEED" fitHeight="32.0" fitWidth="188.0" focusTraversable="true" layoutX="39.0" layoutY="91.0" preserveRatio="true" rotate="90.0">
-      <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
-   </ImageView>
-   <ImageView fx:id="animation" fitHeight="117.0" fitWidth="109.0" focusTraversable="true">
-      <Image url="@../images/perso/sur_place/images/perso_sur_place_01.png" />
-   </ImageView>
-   <ImageView fx:id="waterMid" fitHeight="378.0" fitWidth="251.0" focusTraversable="true" layoutX="230.0" layoutY="284.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterTopLeft" fitHeight="559.0" fitWidth="58.0" focusTraversable="true" layoutX="97.0" layoutY="96.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterTopMid" fitHeight="614.0" fitWidth="188.0" focusTraversable="true" layoutX="416.0" layoutY="50.0" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterTopRight" fitHeight="549.0" fitWidth="177.0" focusTraversable="true" layoutX="782.0" layoutY="96.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterBotMid" fitHeight="219.0" fitWidth="108.0" focusTraversable="true" layoutX="534.0" layoutY="423.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterMidRight" fitHeight="361.0" fitWidth="58.0" focusTraversable="true" layoutX="934.0" layoutY="301.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
-   <ImageView fx:id="waterBotRight" fitHeight="287.0" fitWidth="58.0" focusTraversable="true" layoutX="1103.0" layoutY="376.0" pickOnBounds="true" visible="false">
-      <Image url="@../images/waterfall/W1001.png" />
-   </ImageView>
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#deplacement" onKeyReleased="#halte" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameController">
+   <children>
+      <ImageView fitHeight="713.0" fitWidth="1200.0" focusTraversable="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fond.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauTopMid" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="416.0" layoutY="30.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauMidRight" cacheHint="SPEED" fitHeight="32.0" fitWidth="188.0" focusTraversable="true" layoutX="875.0" layoutY="268.0" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauMid" fitHeight="39.0" fitWidth="188.0" focusTraversable="true" layoutX="287.0" layoutY="267.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauBotRight" cacheHint="ROTATE" fitHeight="161.0" fitWidth="58.0" focusTraversable="true" layoutX="1116.0" layoutY="350.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Vert-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauBotMid" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="445.0" layoutY="403.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme2" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="337.0" layoutY="117.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme0" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="84.0" layoutY="218.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="119.0" focusTraversable="true" layoutX="1088.0" layoutY="9.0">
+         <image>
+            <Image url="@../images/jauge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme1" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="258.0" layoutY="375.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme3" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="503.0" layoutY="256.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme4" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="712.0" layoutY="190.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme5" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="782.0" layoutY="357.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plateforme6" fitHeight="56.0" fitWidth="158.0" focusTraversable="true" layoutX="947.0" layoutY="134.0">
+         <image>
+            <Image url="@../images/platforme_3d_ok.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauTopRight" fitHeight="70.0" fitWidth="216.0" focusTraversable="true" layoutX="791.0" layoutY="75.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tuyauTopLeft" cacheHint="SPEED" fitHeight="32.0" fitWidth="188.0" focusTraversable="true" layoutX="39.0" layoutY="91.0" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Hor-good.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animation" fitHeight="117.0" fitWidth="109.0" focusTraversable="true">
+         <image>
+            <Image url="@../images/perso/sur_place/images/perso_sur_place_01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterMid" fitHeight="378.0" fitWidth="251.0" focusTraversable="true" layoutX="230.0" layoutY="284.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterTopLeft" fitHeight="559.0" fitWidth="58.0" focusTraversable="true" layoutX="97.0" layoutY="96.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterTopMid" fitHeight="614.0" fitWidth="188.0" focusTraversable="true" layoutX="416.0" layoutY="50.0" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterTopRight" fitHeight="549.0" fitWidth="177.0" focusTraversable="true" layoutX="782.0" layoutY="96.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterBotMid" fitHeight="219.0" fitWidth="108.0" focusTraversable="true" layoutX="534.0" layoutY="423.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterMidRight" fitHeight="361.0" fitWidth="58.0" focusTraversable="true" layoutX="934.0" layoutY="301.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waterBotRight" fitHeight="287.0" fitWidth="58.0" focusTraversable="true" layoutX="1103.0" layoutY="376.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
