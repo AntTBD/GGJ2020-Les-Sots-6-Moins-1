@@ -22,7 +22,7 @@ public class SceneLoader {
         switch (scene){
             case SCENE_HOME:stage.setScene(makeSceneHome());
             break;
-            case SCENE_GAME:stage.setScene(makeSceneFin());
+            case SCENE_GAME:stage.setScene(makeSceneGame());
             break;
             case SCENE_FIN:stage.setScene(makeSceneFin());
                 break;

@@ -5,8 +5,12 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
+import mains.Main;
+import mains.SceneLoader;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -34,6 +38,7 @@ public class FinController {
     public void initialize() {
         tl = new Timeline();
         tl.setCycleCount(Animation.INDEFINITE);
+
         tl.getKeyFrames().add(0, new KeyFrame(Duration.millis(50), e -> {
             eau.setImage(img_eau.get((index_tl++) % img_eau.size()));
         }));
@@ -45,5 +50,14 @@ public class FinController {
             perso.setImage(img_perso.get((index_tl_perso++) % img_perso.size()));
         }));
         tl_perso.play();
+    }
+
+
+    public void rejouer(MouseEvent mouseEvent) throws IOException {
+        Main.sceneLoader.switchTo(SceneLoader.SCENE_GAME);
+    }
+
+    public void goToMenu(MouseEvent mouseEvent) throws IOException{
+        Main.sceneLoader.switchTo(SceneLoader.SCENE_HOME);
     }
 }
