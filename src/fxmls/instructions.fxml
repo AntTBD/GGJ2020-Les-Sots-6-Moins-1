@@ -75,6 +75,6 @@
          <image>
             <Image url="@../images/croix.png" />
          </image>
-      </ImageView
+      </ImageView>
    </children>
 </AnchorPane>
