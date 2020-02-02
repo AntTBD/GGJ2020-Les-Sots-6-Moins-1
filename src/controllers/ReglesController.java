@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -10,8 +11,10 @@ import java.io.IOException;
 
 public class ReglesController {
 
+    @FXML
     public Button BoutonFermer;
 
+    @FXML
     public void RetourMenu(MouseEvent mouseEvent) throws IOException {
         Main.sceneLoader.switchTo(SceneLoader.SCENE_HOME);
     }
