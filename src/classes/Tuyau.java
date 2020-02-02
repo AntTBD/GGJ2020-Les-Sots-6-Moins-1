@@ -21,7 +21,6 @@ public class Tuyau {
     private double layoutYInit;
     private int indice;
     private MediaPlayer mediaPlayerTuyau;
-    private boolean ecoulement = false;
     private Timeline timeline = new Timeline();
     public Tuyau(ImageView imgWater, ImageView imgSewel) {
         this.imgWater = imgWater;

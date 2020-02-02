@@ -4,7 +4,6 @@ import classes.Scheduler;
 import classes.Tuyau;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -61,10 +60,7 @@ public class GameController {
     private MediaPlayer mediaPlayerJeu;
     private MediaPlayer mediaPlayerSaut;
     private MediaPlayer mediaPlayerRepare;
-    private Timeline tlCourse, tlSaut, tlBase,tlAttaque;
-
-
-
+    private Timeline tlCourse, tlSaut, tlAttaque;
     public ImageView animation;
     private Scheduler scheduler;
     private ArrayList<Image> spritesCourse = null;
@@ -74,16 +70,13 @@ public class GameController {
     private ArrayList<Tuyau> tuyaux = new ArrayList<>();
     private ArrayList<ImageView> waters = new ArrayList<>();
     private ArrayList<ImageView> liste_plateforme = new ArrayList<>();
+    private int compteur = 0;
 
     public void initialize() {
         String pathJeu = "src/sons/Musique InGame.mp3";
         Media mediaJeu = new Media(new File(pathJeu).toURI().toString());
         mediaPlayerJeu = new MediaPlayer(mediaJeu);
-        mediaPlayerJeu.setOnEndOfMedia(new Runnable() {
-            public void run() {
-                mediaPlayerJeu.seek(Duration.ZERO);
-            }
-        });
+        mediaPlayerJeu.setOnEndOfMedia(() -> mediaPlayerJeu.seek(Duration.ZERO));
         mediaPlayerJeu.play();
         tuyaux.addAll(Arrays.asList(
                 new Tuyau(waterBotRight, tuyauBotRight), new Tuyau(waterTopRight, tuyauTopRight)
@@ -101,7 +94,10 @@ public class GameController {
         waters.addAll(Arrays.asList(waterBotRight, waterTopRight, waterTopMid, waterMid, waterBotMid, waterMidRight, waterTopLeft));
         scheduler = new Scheduler((ArrayList<Tuyau>) tuyaux.clone());
         Timeline tlScheduler = new Timeline();
-        tlScheduler.getKeyFrames().add(new KeyFrame(Duration.millis(5000), event -> scheduler.selectNextAndPlay(spriteWaterfalls)));
+        tlScheduler.getKeyFrames().add(new KeyFrame(new Duration(5000), event -> {
+            compteur++;
+            scheduler.selectNextAndPlay(spriteWaterfalls);
+        }));
         tlScheduler.setCycleCount(Animation.INDEFINITE);
         tlScheduler.play();
         Timeline tlJauge = new Timeline();
@@ -111,12 +107,11 @@ public class GameController {
             double newLayout = 0;
             if (nbFalling == 0) {
                 newHeight = jauge.getHeight() - 0.2;
-                newLayout = MAX_Y_JAUGE - newHeight;
             } else {
                 newHeight = nbFalling * 0.5 + jauge.getHeight();
-                newLayout = MAX_Y_JAUGE - newHeight;
             }
-            if (newHeight <= MAX_Y_JAUGE-9 && newHeight > 0) {
+            newLayout = MAX_Y_JAUGE - newHeight;
+            if (newHeight <= MAX_Y_JAUGE - 9 && newHeight > 0) {
                 jauge.setHeight(newHeight);
                 jauge.setLayoutY(newLayout);
             }
@@ -219,7 +214,7 @@ public class GameController {
                     tlSaut.stop();
                     enSaut = false;
                     mediaPlayerSaut.stop();
-                }else {
+                } else {
                     for (ImageView plateforme : liste_plateforme) {
                         if ((Math.abs(animation.getLayoutY() - plateforme.getLayoutY()) <= 25) && animation.getLayoutX() <= plateforme.getLayoutX() + plateforme.getFitWidth() && animation.getLayoutX() >= plateforme.getLayoutX()) {
                             imageSautIndex = 0;
@@ -236,17 +231,15 @@ public class GameController {
     }
 
     public void deplacement(KeyEvent keyEvent) {
-        if(keyEvent.getCode() == KeyCode.RIGHT) {
-            System.out.println(animation.getLayoutX());
+        if (keyEvent.getCode() == KeyCode.RIGHT) {
             distance = 22;
             animation.setScaleX(1);
             tlCourse.play();
-        } else if(keyEvent.getCode() == KeyCode.LEFT) {
-            System.out.println(animation.getLayoutX());
+        } else if (keyEvent.getCode() == KeyCode.LEFT) {
             distance = -22;
             animation.setScaleX(-1);
             tlCourse.play();
-        } else if(keyEvent.getCode() == KeyCode.UP && tlSaut.getStatus() != Animation.Status.RUNNING) {
+        } else if (keyEvent.getCode() == KeyCode.UP && tlSaut.getStatus() != Animation.Status.RUNNING) {
             String pathSaut = "src/sons/bruit saut.mp3";
             Media mediaSaut = new Media(new File(pathSaut).toURI().toString());
             mediaPlayerSaut = new MediaPlayer(mediaSaut);
@@ -254,14 +247,12 @@ public class GameController {
             enSaut = true;
             imageSautIndex = 0;
             tlSaut.play();
-        } else if (keyEvent.getCode() == KeyCode.I) {
-            System.out.println("X : " + animation.getLayoutX() + " Y : " + animation.getLayoutY());
         } else if (keyEvent.getCode() == KeyCode.SPACE) {
             tlAttaque.play();
-            ImageView imgWater = nearTuyau(animation,waters);
-            if (imgWater!=null){
-                Tuyau tuyau = searchByImgWater(imgWater,tuyaux);
-                if(tuyau.isFalling()){
+            ImageView imgWater = nearTuyau(animation, waters);
+            if (imgWater != null) {
+                Tuyau tuyau = searchByImgWater(imgWater, tuyaux);
+                if (tuyau.isFalling()) {
                     String pathRepare = "src/sons/Bruit réparation.mp3";
                     Media mediaRepare = new Media(new File(pathRepare).toURI().toString());
                     mediaPlayerRepare = new MediaPlayer(mediaRepare);

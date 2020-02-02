@@ -3,18 +3,14 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+
 import javafx.util.Duration;
 import mains.Main;
 import mains.SceneLoader;
-
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
 public class HomeController {
-    public Text title;
     public MediaPlayer mediaPlayerMenu;
 
     @FXML
@@ -33,6 +29,5 @@ public class HomeController {
             }
         });
         mediaPlayerMenu.play();
-        title.setStyle("-fx-font-family: 'Amatic SC'");
     }
 }

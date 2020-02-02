@@ -27,9 +27,7 @@ public class SceneLoader {
     }
     private Scene makeSceneHome() throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("fxmls/home.fxml")));
-        Scene scene = new Scene(root,SCENE_WIDTH,SCENE_HEIGHT);
-        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-        return scene;
+        return new Scene(root,SCENE_WIDTH,SCENE_HEIGHT);
     }
     private Scene makeSceneGame() throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("fxmls/game.fxml")));
