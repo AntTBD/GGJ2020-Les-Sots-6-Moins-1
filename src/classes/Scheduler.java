@@ -39,4 +39,8 @@ public class Scheduler {
     public int getNbFalling(){
         return 7-tuyaux.size();
     }
+
+    public void stopMediaEau(){
+        mediaPlayerEau.stop();
+    }
 }

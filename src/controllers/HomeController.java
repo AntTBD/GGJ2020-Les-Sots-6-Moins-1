@@ -18,6 +18,12 @@ public class HomeController {
         Main.sceneLoader.switchTo(SceneLoader.SCENE_GAME);
         mediaPlayerMenu.stop();
     }
+
+    @FXML
+    private void quitter() {
+        System.exit(0);
+    }
+
     @FXML
     public void initialize(){
         String pathMenu = "src/sons/musique menu.mp3";

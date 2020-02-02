@@ -66,7 +66,7 @@ public class GameController {
     private MediaPlayer mediaPlayerJeu;
     private MediaPlayer mediaPlayerSaut;
     private MediaPlayer mediaPlayerRepare;
-    private Timeline tlCourse, tlSaut, tlAttaque;
+    private Timeline tlCourse, tlSaut, tlAttaque, tlScheduler, tlJauge, tltemps;
     public ImageView animation;
     private Scheduler scheduler;
     private ArrayList<Image> spritesCourse = null;
@@ -86,11 +86,11 @@ public class GameController {
         mediaPlayerJeu.setOnEndOfMedia(() -> mediaPlayerJeu.seek(Duration.ZERO));
         mediaPlayerJeu.play();
 
-        Timeline temps = new Timeline(new KeyFrame(
+        tltemps = new Timeline(new KeyFrame(
                 Duration.millis(1000),
                 ae -> avancerTemps()));
-        temps.setCycleCount(Animation.INDEFINITE);
-        temps.play();
+        tltemps.setCycleCount(Animation.INDEFINITE);
+        tltemps.play();
 
         tuyaux.addAll(Arrays.asList(
                 new Tuyau(waterBotRight, tuyauBotRight), new Tuyau(waterTopRight, tuyauTopRight)
@@ -107,14 +107,14 @@ public class GameController {
         liste_plateforme.add(plateforme6);
         waters.addAll(Arrays.asList(waterBotRight, waterTopRight, waterTopMid, waterMid, waterBotMid, waterMidRight, waterTopLeft));
         scheduler = new Scheduler((ArrayList<Tuyau>) tuyaux.clone());
-        Timeline tlScheduler = new Timeline();
+        tlScheduler = new Timeline();
         tlScheduler.getKeyFrames().add(new KeyFrame(new Duration(5000), event -> {
             compteur++;
             scheduler.selectNextAndPlay(spriteWaterfalls);
         }));
         tlScheduler.setCycleCount(Animation.INDEFINITE);
         tlScheduler.play();
-        Timeline tlJauge = new Timeline();
+        tlJauge = new Timeline();
         tlJauge.getKeyFrames().add(new KeyFrame(Duration.millis(100), event -> {
             int nbFalling = scheduler.getNbFalling();
             double newHeight = 0;
@@ -134,6 +134,7 @@ public class GameController {
             if(newHeight >= MAX_Y_JAUGE-32)
             {
                 try {
+                    this.endController();
                     Main.sceneLoader.switchTo(SceneLoader.SCENE_FIN);
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -330,5 +331,26 @@ public class GameController {
             if (t.getImgWater().equals(water)) return t;
         }
         return null;
+    }
+
+    public void stopTimeLines(){
+        tlAttaque.stop();
+        tlCourse.stop();
+        tlSaut.stop();
+        tlJauge.stop();
+        tlScheduler.stop();
+        tltemps.stop();
+    }
+
+    public void stopMedia(){
+        mediaPlayerJeu.stop();
+        mediaPlayerRepare.stop();
+        mediaPlayerSaut.stop();
+        scheduler.stopMediaEau();
+    }
+
+    public void endController(){
+        stopTimeLines();
+        stopMedia();
     }
 }
