@@ -31,6 +31,13 @@ public class GameController {
             , new Image("images/waterfall/W1007.png")
             , new Image("images/waterfall/W1008.png")
     ));
+    private static ArrayList<Image> spriteEgoutFalls = new ArrayList<>(Arrays.asList(new Image("images/waterfall_egoux/images/waterfall_egoux_01.png"),
+            new Image("images/waterfall_egoux/images/waterfall_egoux_02.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_03.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_04.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_05.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_06.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_07.png")));
     public ImageView plateforme0;
     public ImageView plateforme1;
     public ImageView plateforme2;
@@ -55,6 +62,9 @@ public class GameController {
     public static Image imageBase = new Image("images/perso/sur_place/images/perso_sur_place_01.png");
     public Rectangle jauge;
     public Text timer;
+    public ImageView waterEgouts1;
+    public ImageView waterEgouts2;
+    public ImageView waterEgouts3;
     private int temps = 0;
     private int imageCourseIndex = 0;
     private int imageSautIndex = 0;
@@ -66,7 +76,7 @@ public class GameController {
     private MediaPlayer mediaPlayerJeu;
     private MediaPlayer mediaPlayerSaut;
     private MediaPlayer mediaPlayerRepare;
-    private Timeline tlCourse, tlSaut, tlAttaque, tlScheduler, tlJauge, tltemps;
+    private Timeline tlCourse, tlSaut, tlAttaque, tlScheduler, tlJauge, tltemps,tlEgouts;
     public ImageView animation;
     private Scheduler scheduler;
     private ArrayList<Image> spritesCourse = null;
@@ -76,8 +86,7 @@ public class GameController {
     private ArrayList<Tuyau> tuyaux = new ArrayList<>();
     private ArrayList<ImageView> waters = new ArrayList<>();
     private ArrayList<ImageView> liste_plateforme = new ArrayList<>();
-    private int compteur = 0;
-
+    private int compteur =0;
     public void initialize() {
         timer.setText("0");
         String pathJeu = "src/sons/Musique InGame.mp3";
@@ -108,10 +117,7 @@ public class GameController {
         waters.addAll(Arrays.asList(waterBotRight, waterTopRight, waterTopMid, waterMid, waterBotMid, waterMidRight, waterTopLeft));
         scheduler = new Scheduler((ArrayList<Tuyau>) tuyaux.clone());
         tlScheduler = new Timeline();
-        tlScheduler.getKeyFrames().add(new KeyFrame(new Duration(5000), event -> {
-            compteur++;
-            scheduler.selectNextAndPlay(spriteWaterfalls);
-        }));
+        tlScheduler.getKeyFrames().add(new KeyFrame(new Duration(5000), event -> scheduler.selectNextAndPlay(spriteWaterfalls)));
         tlScheduler.setCycleCount(Animation.INDEFINITE);
         tlScheduler.play();
         tlJauge = new Timeline();
@@ -156,8 +162,16 @@ public class GameController {
         spritesAttaque.add(new Image("images/perso/repare/images/perso_repare_02.png"));
         spritesAttaque.add(new Image("images/perso/repare/images/perso_repare_03.png"));
         spritesAttaque.add(new Image("images/perso/repare/images/perso_repare_03.png"));
-
-
+        tlEgouts = new Timeline();
+        tlEgouts.getKeyFrames().add(new KeyFrame(Duration.millis(80),event -> {
+            compteur++;
+            Image img = spriteEgoutFalls.get(compteur%spriteEgoutFalls.size());
+            waterEgouts1.setImage(img);
+            waterEgouts2.setImage(img);
+            waterEgouts3.setImage(img);
+        }));
+        tlEgouts.setCycleCount(Animation.INDEFINITE);
+        tlEgouts.play();
         tlCourse = new Timeline();
         spritesCourse = new ArrayList<>();
         spritesCourse.add(new Image("images/perso/court/images/perso_court_01.png"));
