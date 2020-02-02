@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FinController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fond.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="195.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/perso/dead/images/perso_dead_04.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eau" fitHeight="211.0" fitWidth="81.0" layoutX="210.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/waterfall/W1001.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/tuyaux/tuyau-Vert-bad.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="91.0" fitWidth="243.0" layoutX="835.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/attache_por_pancarte.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="243.0" layoutX="841.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/attache_por_pancarte.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="453.0" layoutX="785.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pancarte.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="453.0" layoutX="791.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pancarte.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="420.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="270.13671875">
+         <font>
+            <Font name="System Bold" size="67.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

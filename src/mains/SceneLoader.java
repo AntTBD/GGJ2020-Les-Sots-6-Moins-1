@@ -14,6 +14,7 @@ public class SceneLoader {
     public static final int SCENE_HEIGHT=675;
     public static final int SCENE_HOME=0;
     public static final int SCENE_GAME=1;
+    public static final int SCENE_FIN=2;
     public SceneLoader(Stage stage) {
         this.stage = stage;
     }
@@ -21,8 +22,10 @@ public class SceneLoader {
         switch (scene){
             case SCENE_HOME:stage.setScene(makeSceneHome());
             break;
-            case SCENE_GAME:stage.setScene(makeSceneGame());
+            case SCENE_GAME:stage.setScene(makeSceneFin());
             break;
+            case SCENE_FIN:stage.setScene(makeSceneFin());
+                break;
         }
     }
     private Scene makeSceneHome() throws IOException {
@@ -33,6 +36,11 @@ public class SceneLoader {
     }
     private Scene makeSceneGame() throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("fxmls/game.fxml")));
+        return new Scene(root,SCENE_WIDTH,SCENE_HEIGHT);
+    }
+
+    private Scene makeSceneFin() throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("fxmls/fin.fxml")));
         return new Scene(root,SCENE_WIDTH,SCENE_HEIGHT);
     }
 }
