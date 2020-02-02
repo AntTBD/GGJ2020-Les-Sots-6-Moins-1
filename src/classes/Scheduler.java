@@ -36,5 +36,7 @@ public class Scheduler {
         tuyau.stopWaterFalls();
         tuyaux.add(tuyau);
     }
-
+    public int getNbFalling(){
+        return 7-tuyaux.size();
+    }
 }
