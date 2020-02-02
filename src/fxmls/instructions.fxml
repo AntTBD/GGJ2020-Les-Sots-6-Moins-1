@@ -66,11 +66,11 @@
             <Font name="System Bold" size="32.0" />
          </font>
       </Text>
-      <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="1068.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="43.0" fitWidth="41.0" focusTraversable="true" layoutX="1068.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/croix.png" />
          </image>
       </ImageView>
-      <Button fx:id="BoutonFermer" layoutX="1068.0" layoutY="45.0" mnemonicParsing="false" onMouseReleased="#RetourMenu" prefHeight="43.0" prefWidth="41.0" text="Button" visible="false" />
+      <Button fx:id="BoutonFermer" cancelButton="true" layoutX="1068.0" layoutY="45.0" mnemonicParsing="false" onAction="#RetourMenu" prefHeight="43.0" prefWidth="41.0" text="Button" visible="false" />
    </children>
 </AnchorPane>
