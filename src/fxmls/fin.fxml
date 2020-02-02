@@ -16,7 +16,7 @@
             <Image url="@../images/fond.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="195.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="perso" fitHeight="150.0" fitWidth="200.0" layoutX="195.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/perso/dead/images/perso_dead_04.png" />
          </image>
@@ -55,6 +55,16 @@
       <Text fill="WHITE" layoutX="420.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="270.13671875">
          <font>
             <Font name="System Bold" size="67.0" />
+         </font>
+      </Text>
+      <Text layoutX="792.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REJOUER" textAlignment="CENTER" wrappingWidth="270.13671875">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Text>
+      <Text layoutX="798.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="270.13671875">
+         <font>
+            <Font name="System Bold" size="52.0" />
          </font>
       </Text>
    </children>
