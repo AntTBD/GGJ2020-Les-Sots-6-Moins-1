@@ -137,7 +137,6 @@ public class GameController {
                 jauge.setHeight(newHeight);
                 jauge.setLayoutY(newLayout);
             }
-            System.out.println(newHeight);
             //Condition défaite
             if(newHeight >= MAX_Y_JAUGE-32)
             {
@@ -325,7 +324,6 @@ public class GameController {
     }
     public ImageView nearTuyau(ImageView perso,ArrayList<ImageView> waters){
         for (ImageView wat:waters) {
-            System.out.println("perso"+perso.getLayoutX()+" t :"+wat.getLayoutX());
             double distX = perso.getLayoutX()-(wat.getLayoutX()+wat.getFitWidth()/2);
             double distY = Math.abs(perso.getLayoutY()-(perso.getFitHeight()/2)-wat.getLayoutY());
             if(distY<=40){
