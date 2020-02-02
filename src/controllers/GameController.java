@@ -343,9 +343,7 @@ public class GameController {
     }
 
     public void stopMedia(){
-        mediaPlayerJeu.stop();
-        mediaPlayerRepare.stop();
-        mediaPlayerSaut.stop();
+        if(mediaPlayerJeu.getMedia()!=null) mediaPlayerJeu.stop();
         scheduler.stopMediaEau();
     }
 
