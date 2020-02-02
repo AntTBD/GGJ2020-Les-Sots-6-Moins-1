@@ -50,7 +50,6 @@ public class GameController {
     private int imageGravIndex = 0;
     private int imageAttaqueIndex = 0;
     private int distance = 0;
-    private int distanceSaut = 0;
     private int hauteurSaut = 45;
     private boolean enSaut = false;
 
@@ -146,12 +145,15 @@ public class GameController {
 
         tlCourse.setCycleCount(Animation.INDEFINITE);
         tlCourse.getKeyFrames().add(0, new KeyFrame(Duration.millis(60), e -> {
+            animation.setLayoutX(animation.getLayoutX() + distance);
             if (!enSaut) {
                 for (ImageView plateforme : liste_plateforme) {
                     if (animation.getLayoutY() < 500) {
                         if (animation.getLayoutY() == plateforme.getLayoutY()) {
-                            if (animation.getLayoutX() >= plateforme.getLayoutX() + plateforme.getFitWidth() || animation.getLayoutX() <= plateforme.getLayoutX()) {
+                            System.out.println("miam" + plateforme.getId());
+                            if (animation.getLayoutX() > plateforme.getLayoutX() + plateforme.getFitWidth() || animation.getLayoutX() < plateforme.getLayoutX()) {
                                 System.out.println(plateforme.getLayoutX() + " " + plateforme.getFitWidth() + "   " + animation.getLayoutX());
+                                System.out.println(plateforme.getLayoutX() + " " + (plateforme.getLayoutX() + plateforme.getFitWidth()));
                                 imageSautIndex = 5;
                                 tlSaut.play();
                             }
@@ -161,8 +163,6 @@ public class GameController {
                 if (tlAttaque.getStatus() != Animation.Status.RUNNING)
                     animation.setImage(spritesCourse.get((imageCourseIndex++) % spritesCourse.size()));
             }
-            animation.setLayoutX(animation.getLayoutX() + distance);
-
         }));
 
         tlSaut.setCycleCount(Animation.INDEFINITE);
@@ -201,12 +201,12 @@ public class GameController {
     public void deplacement(KeyEvent keyEvent) {
         if(keyEvent.getCode() == KeyCode.RIGHT) {
             System.out.println(animation.getLayoutX());
-            distance = 20;
+            distance = 22;
             animation.setScaleX(1);
             tlCourse.play();
         } else if(keyEvent.getCode() == KeyCode.LEFT) {
             System.out.println(animation.getLayoutX());
-            distance = -20;
+            distance = -22;
             animation.setScaleX(-1);
             tlCourse.play();
         } else if(keyEvent.getCode() == KeyCode.UP && tlSaut.getStatus() != Animation.Status.RUNNING) {
