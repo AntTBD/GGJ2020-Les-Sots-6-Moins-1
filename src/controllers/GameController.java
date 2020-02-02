@@ -124,12 +124,14 @@ public class GameController {
             } else {
                 newHeight = nbFalling * 0.5 + jauge.getHeight();
             }
+            newLayout=MAX_Y_JAUGE-newHeight;
             if (newHeight <= MAX_Y_JAUGE-30 && newHeight > 0) {
                 jauge.setHeight(newHeight);
                 jauge.setLayoutY(newLayout);
             }
+            System.out.println(newHeight);
             //Condition défaite
-            if(newHeight == MAX_Y_JAUGE-30)
+            if(newHeight >= MAX_Y_JAUGE-32)
             {
                 try {
                     Main.sceneLoader.switchTo(SceneLoader.SCENE_FIN);
