@@ -31,13 +31,15 @@ public class GameController {
             , new Image("images/waterfall/W1007.png")
             , new Image("images/waterfall/W1008.png")
     ));
-    private static ArrayList<Image> spriteEgoutFalls = new ArrayList<>(Arrays.asList(new Image("images/waterfall_egoux/images/waterfall_egoux_01.png"),
-            new Image("images/waterfall_egoux/images/waterfall_egoux_02.png")
+    private static ArrayList<Image> spriteEgoutFalls = new ArrayList<>(Arrays.asList(
+            new Image("images/waterfall_egoux/images/waterfall_egoux_01.png")
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_02.png")
             ,new Image("images/waterfall_egoux/images/waterfall_egoux_03.png")
             ,new Image("images/waterfall_egoux/images/waterfall_egoux_04.png")
             ,new Image("images/waterfall_egoux/images/waterfall_egoux_05.png")
             ,new Image("images/waterfall_egoux/images/waterfall_egoux_06.png")
-            ,new Image("images/waterfall_egoux/images/waterfall_egoux_07.png")));
+            ,new Image("images/waterfall_egoux/images/waterfall_egoux_07.png")
+    ));
     public ImageView plateforme0;
     public ImageView plateforme1;
     public ImageView plateforme2;
@@ -86,7 +88,7 @@ public class GameController {
     private ArrayList<Tuyau> tuyaux = new ArrayList<>();
     private ArrayList<ImageView> waters = new ArrayList<>();
     private ArrayList<ImageView> liste_plateforme = new ArrayList<>();
-    private int compteur =0;
+    private int compteur = 0;
     public void initialize() {
         timer.setText("0");
         String pathJeu = "src/sons/Musique InGame.mp3";

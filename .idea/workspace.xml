@@ -422,7 +422,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controllers/GameController.java</url>
-          <line>165</line>
+          <line>167</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
