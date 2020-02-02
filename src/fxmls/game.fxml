@@ -86,4 +86,13 @@
          <Font name="System Bold" size="45.0" />
       </font>
    </Text>
+   <ImageView fx:id="waterEgouts1" layoutX="212.0" layoutY="590.0">
+      <Image url="@../images/waterfall_egoux/images/waterfall_egoux_01.png"/>
+   </ImageView>
+   <ImageView fx:id="waterEgouts2" layoutX="594.0" layoutY="590.0">
+      <Image url="@../images/waterfall_egoux/images/waterfall_egoux_01.png"/>
+   </ImageView>
+   <ImageView fx:id="waterEgouts3" layoutX="1007.0" layoutY="590.0">
+      <Image url="@../images/waterfall_egoux/images/waterfall_egoux_01.png"/>
+   </ImageView>
 </AnchorPane>
