@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GGJ2020-Les-Sots-6-Moins-1" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Level changer">
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_06.png" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/GGJ2020_Les_Sots_6_Moins_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Tuyau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Tuyau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/game.fxml" afterDir="false" />
     </list>
@@ -112,7 +88,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XAeL0jOBHV9hmIoU5hRjMlGgdO" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectReloadState">
@@ -137,32 +113,24 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/mains" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\images" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fxmls" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
-      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
@@ -263,6 +231,8 @@
       <workItem from="1580493441838" duration="729000" />
       <workItem from="1580498013203" duration="12511000" />
       <workItem from="1580545910481" duration="31596000" />
+      <workItem from="1580586978460" duration="1792000" />
+      <workItem from="1580593361621" duration="9735000" />
     </task>
     <task id="LOCAL-00001" summary="Switch et font">
       <created>1580511663077</created>
@@ -317,10 +287,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580499630191" />
-    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1580568013834">
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1580587470553">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580568013834" />
+    <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580587470553" />
+    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580583275593">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580583275593" />
     <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580579164539">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -329,46 +303,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580577778975" />
-    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580582227699">
+    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580603191179">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580582227699" />
+    <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580603191179" />
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1580582427179">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580582139549">
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580603221038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
-    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580582139549">
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580603221038" />
+    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580603221038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
-    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580582139549">
+    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580603221038" />
+    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580603221038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
-    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580582139549">
+    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580603221038" />
+    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580603221038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580582139549" />
-    <state width="1865" height="211" key="GridCell.Tab.1.bottom" timestamp="1580569486430">
+    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580603221038" />
+    <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580596119204">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
-    <state width="1865" height="211" key="GridCell.Tab.1.center" timestamp="1580569486429">
+    <state width="1865" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580596119204" />
+    <state width="1865" height="398" key="GridCell.Tab.1.center" timestamp="1580596119204">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
-    <state width="1865" height="211" key="GridCell.Tab.1.left" timestamp="1580569486429">
+    <state width="1865" height="398" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580596119204" />
+    <state width="1865" height="398" key="GridCell.Tab.1.left" timestamp="1580596119203">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486429" />
-    <state width="1865" height="211" key="GridCell.Tab.1.right" timestamp="1580569486430">
+    <state width="1865" height="398" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580596119203" />
+    <state width="1865" height="398" key="GridCell.Tab.1.right" timestamp="1580596119204">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580569486430" />
+    <state width="1865" height="398" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580596119204" />
+    <state x="352" y="21" key="SettingsEditor" timestamp="1580583298405">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="352" y="21" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580583298405" />
     <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580582427172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

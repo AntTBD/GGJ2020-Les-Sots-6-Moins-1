@@ -23,6 +23,13 @@ public class GameController {
             ,new Image("images/waterfall/W1007.png")
             ,new Image("images/waterfall/W1008.png")
     ));
+    public ImageView plateforme0;
+    public ImageView plateforme1;
+    public ImageView plateforme2;
+    public ImageView plateforme3;
+    public ImageView plateforme4;
+    public ImageView plateforme5;
+    public ImageView plateforme6;
     public ImageView tuyauTopRight;
     public ImageView tuyauTopLeft;
     public ImageView tuyauMid;
@@ -44,35 +51,44 @@ public class GameController {
     private int imageAttaqueIndex = 0;
     private int distance = 0;
     private int distanceSaut = 0;
-    private int hauteurSaut = 30;
+    private int hauteurSaut = 45;
     private boolean enSaut = false;
 
     private Timeline tlCourse, tlSaut, tlBase,tlAttaque;
 
 
     public ImageView animation;
-
+    private Scheduler scheduler;
     private ArrayList<Image> spritesCourse = null;
     private ArrayList<Image> spritesSaut = null;
     private ArrayList<Image> spritesGrav = null;
     private ArrayList<Image> spritesAttaque = null;
+    private ArrayList<Tuyau> tuyaux = new ArrayList<>();
+    private ArrayList<ImageView> waters= new ArrayList<>();
+    private ArrayList<ImageView> liste_plateforme = new ArrayList<>();
     public void initialize() {
-        ArrayList<Tuyau> tuyaux = new ArrayList<>(Arrays.asList(
+        tuyaux.addAll(Arrays.asList(
                 new Tuyau(waterBotRight, tuyauBotRight), new Tuyau(waterTopRight, tuyauTopRight)
                 , new Tuyau(waterTopMid, tuyauTopMid), new Tuyau(waterMid, tuyauMid)
                 , new Tuyau(waterBotMid, tuyauBotMid), new Tuyau(waterMidRight, tuyauMidRight)
                 , new Tuyau(waterTopLeft, tuyauTopLeft)
         ));
-        Scheduler scheduler = new Scheduler(tuyaux);
-        tuyaux.forEach(tuyau -> tuyau.getImgWater().setOnMouseReleased(event -> scheduler.repare(tuyau)));
-
+        liste_plateforme.add(plateforme0);
+        liste_plateforme.add(plateforme1);
+        liste_plateforme.add(plateforme2);
+        liste_plateforme.add(plateforme3);
+        liste_plateforme.add(plateforme4);
+        liste_plateforme.add(plateforme5);
+        liste_plateforme.add(plateforme6);
+        waters.addAll(Arrays.asList(waterBotRight,waterTopRight,waterTopMid,waterMid,waterBotMid,waterMidRight,waterTopLeft));
+        scheduler = new Scheduler((ArrayList<Tuyau>) tuyaux.clone());
         Timeline tlScheduler = new Timeline(new KeyFrame(Duration.millis(5000), event -> scheduler.selectNextAndPlay(spriteWaterfalls)));
         tlScheduler.setCycleCount(Animation.INDEFINITE);
         tlScheduler.play();
-        animation.setLayoutY(400);
+        animation.setLayoutY(500);
         animation.setLayoutX(300);
         animation.setTranslateX(-animation.getFitWidth() / 2);
-        animation.setTranslateY(-animation.getFitHeight());
+        animation.setTranslateY(-animation.getFitHeight()+10);
         spritesCourse = new ArrayList<>();
 
         tlAttaque = new Timeline();
@@ -131,18 +147,17 @@ public class GameController {
         tlCourse.setCycleCount(Animation.INDEFINITE);
         tlCourse.getKeyFrames().add(0, new KeyFrame(Duration.millis(60), e -> {
             if (!enSaut) {
-                /*if (animation.getLayoutY() < sol.getLayoutY()) {
-                    System.out.println("oui");
-                    if (animation.getLayoutY() == plateforme.getLayoutY()) {
-                        System.out.println("ok");
-                        if (animation.getLayoutX() >= plateforme.getLayoutX() + plateforme.getWidth() || animation.getLayoutX() <= plateforme.getLayoutX()) {
-                            System.out.println(plateforme.getLayoutX());
-                            imageSautIndex = 5;
-                            tlSaut.play();
-                            System.out.println(plateforme.getWidth());
+                for (ImageView plateforme : liste_plateforme) {
+                    if (animation.getLayoutY() < 500) {
+                        if (animation.getLayoutY() == plateforme.getLayoutY()) {
+                            if (animation.getLayoutX() >= plateforme.getLayoutX() + plateforme.getFitWidth() || animation.getLayoutX() <= plateforme.getLayoutX()) {
+                                System.out.println(plateforme.getLayoutX() + " " + plateforme.getFitWidth() + "   " + animation.getLayoutX());
+                                imageSautIndex = 5;
+                                tlSaut.play();
+                            }
                         }
                     }
-                }*/
+                }
                 if (tlAttaque.getStatus() != Animation.Status.RUNNING)
                     animation.setImage(spritesCourse.get((imageCourseIndex++) % spritesCourse.size()));
             }
@@ -156,39 +171,41 @@ public class GameController {
                 animation.setImage(spritesSaut.get((imageSautIndex++) % spritesSaut.size()));
             } else imageSautIndex++;
 
-            if (animation.getScaleX() == -1) {
-                distanceSaut = 15;
-            } else distanceSaut = -15;
-
             if (imageSautIndex < 5) {
                 animation.setLayoutY(animation.getLayoutY() - hauteurSaut);
             } else {
                 animation.setLayoutY(animation.getLayoutY() + hauteurSaut);
 
-                if (animation.getLayoutY() >= 400) {
+                if (animation.getLayoutY() >= 500) {
                     imageSautIndex = 0;
-                    animation.setLayoutY(400);
+                    animation.setLayoutY(500);
                     animation.setImage(imageBase);
                     tlSaut.stop();
                     enSaut = false;
-                } /*else if ((Math.abs(animation.getLayoutY() - plateforme.getLayoutY()) <= 10) && animation.getLayoutX() <= 700 && animation.getLayoutX() >= 500) {
-                    imageSautIndex = 0;
-                    animation.setLayoutY(plateforme.getLayoutY());
-                    animation.setImage(imageBase);
-                    tlSaut.stop();
-                    enSaut = false;
-                }*/
-
+                }else {
+                    for (ImageView plateforme : liste_plateforme) {
+                        if ((Math.abs(animation.getLayoutY() - plateforme.getLayoutY()) <= 25) && animation.getLayoutX() <= plateforme.getLayoutX() + plateforme.getFitWidth() && animation.getLayoutX() >= plateforme.getLayoutX()) {
+                            System.out.println(plateforme.getId());
+                            System.out.println(animation.getTranslateX());
+                            imageSautIndex = 0;
+                            animation.setLayoutY(plateforme.getLayoutY());
+                            animation.setImage(imageBase);
+                            tlSaut.stop();
+                            enSaut = false;
+                        }
+                    }
+                }
             }
-            animation.setLayoutX(animation.getLayoutX() - distanceSaut);
         }));
     }
     public void deplacement(KeyEvent keyEvent) {
         if(keyEvent.getCode() == KeyCode.RIGHT) {
+            System.out.println(animation.getLayoutX());
             distance = 20;
             animation.setScaleX(1);
             tlCourse.play();
         } else if(keyEvent.getCode() == KeyCode.LEFT) {
+            System.out.println(animation.getLayoutX());
             distance = -20;
             animation.setScaleX(-1);
             tlCourse.play();
@@ -200,6 +217,16 @@ public class GameController {
             System.out.println( "X : " + animation.getLayoutX() + " Y : " + animation.getLayoutY());
         } else if(keyEvent.getCode() == KeyCode.SPACE) {
             tlAttaque.play();
+            ImageView imgWater = nearTuyau(animation,waters);
+            if (imgWater!=null){
+                System.out.println("Yaaa");
+                Tuyau tuyau = searchByImgWater(imgWater,tuyaux);
+                if(tuyau.isFalling()){
+                    System.out.println("Tching");
+                    scheduler.repare(tuyau);
+                }
+            }
+
         }
 
     }
@@ -212,5 +239,32 @@ public class GameController {
             animation.setImage(imageBase);
             tlCourse.stop();
         }
+    }
+    public ImageView nearTuyau(ImageView perso,ArrayList<ImageView> waters){
+        for (ImageView wat:waters) {
+            System.out.println("perso"+perso.getLayoutX()+" t :"+wat.getLayoutX());
+            double distX = perso.getLayoutX()-(wat.getLayoutX()+wat.getFitWidth()/2);
+            double distY = Math.abs(perso.getLayoutY()-(perso.getFitHeight()/2)-wat.getLayoutY());
+            System.out.println("dist X = "+distX);
+            System.out.println("dist Y = " +distY );
+            if(distY<=40){
+                if(perso.getScaleX()>0){
+                    if(distX<=15 && distX>=-50){
+                        return wat;
+                    }
+                }else {
+                    if(distX>=-15 && distX<=50){
+                        return wat;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+    public Tuyau searchByImgWater(ImageView water,ArrayList<Tuyau> tuyaux){
+        for (Tuyau t:tuyaux) {
+            if(t.getImgWater().equals(water)) return t;
+        }
+        return null;
     }
 }

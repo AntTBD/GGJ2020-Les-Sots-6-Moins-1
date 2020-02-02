@@ -64,9 +64,17 @@ public class Tuyau {
         tlDismiss.setOnFinished(event -> {
             imgWater.setVisible(false);
             imgWater.setLayoutY(layoutYInit);
+            indice=0;
         });
     }
     public ImageView getImgWater() {
         return imgWater;
+    }
+
+    public ImageView getImgSewel() {
+        return imgSewel;
+    }
+    public boolean isFalling(){
+        return timeline.getStatus().equals(Animation.Status.RUNNING);
     }
 }
