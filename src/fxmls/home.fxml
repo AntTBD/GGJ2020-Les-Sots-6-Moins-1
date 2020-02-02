@@ -15,7 +15,7 @@
          <Font name="Amatic SC Bold" size="60.0" />
       </font>
    </Text>
-   <Text layoutX="708.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controle" textAlignment="CENTER" wrappingWidth="268.13671875">
+   <Text fx:id="BoutonRegles" layoutX="708.0" layoutY="301.0" onMouseReleased="#VoirRegles" strokeType="OUTSIDE" strokeWidth="0.0" text="Controle" textAlignment="CENTER" wrappingWidth="268.13671875">
       <font>
          <Font name="Berlin Sans FB Bold" size="50.0" />
       </font>
