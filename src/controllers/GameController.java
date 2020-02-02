@@ -140,6 +140,7 @@ public class GameController {
             //Condition défaite
             if(newHeight >= MAX_Y_JAUGE-32)
             {
+                mediaPlayerJeu.stop();
                 try {
                     this.endController();
                     FinController.score = temps*314;

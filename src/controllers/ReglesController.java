@@ -15,7 +15,7 @@ public class ReglesController {
     public Button BoutonFermer;
 
     @FXML
-    public void RetourMenu(MouseEvent mouseEvent) throws IOException {
+    public void retourMenu(MouseEvent mouseEvent) throws IOException {
         Main.sceneLoader.switchTo(SceneLoader.SCENE_HOME);
     }
 }
