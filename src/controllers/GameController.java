@@ -9,9 +9,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -50,10 +53,11 @@ public class GameController {
     private int imageGravIndex = 0;
     private int imageAttaqueIndex = 0;
     private int distance = 0;
-    private int distanceSaut = 0;
     private int hauteurSaut = 45;
     private boolean enSaut = false;
-
+    private MediaPlayer mediaPlayerJeu;
+    private MediaPlayer mediaPlayerSaut;
+    private MediaPlayer mediaPlayerRepare;
     private Timeline tlCourse, tlSaut, tlBase,tlAttaque;
 
 
@@ -67,6 +71,15 @@ public class GameController {
     private ArrayList<ImageView> waters= new ArrayList<>();
     private ArrayList<ImageView> liste_plateforme = new ArrayList<>();
     public void initialize() {
+        String pathJeu = "src/sons/Musique InGame.mp3";
+        Media mediaJeu = new Media(new File(pathJeu).toURI().toString());
+        mediaPlayerJeu = new MediaPlayer(mediaJeu);
+        mediaPlayerJeu.setOnEndOfMedia(new Runnable() {
+            public void run() {
+                mediaPlayerJeu.seek(Duration.ZERO);
+            }
+        });
+        mediaPlayerJeu.play();
         tuyaux.addAll(Arrays.asList(
                 new Tuyau(waterBotRight, tuyauBotRight), new Tuyau(waterTopRight, tuyauTopRight)
                 , new Tuyau(waterTopMid, tuyauTopMid), new Tuyau(waterMid, tuyauMid)
@@ -146,12 +159,15 @@ public class GameController {
 
         tlCourse.setCycleCount(Animation.INDEFINITE);
         tlCourse.getKeyFrames().add(0, new KeyFrame(Duration.millis(60), e -> {
+            animation.setLayoutX(animation.getLayoutX() + distance);
             if (!enSaut) {
                 for (ImageView plateforme : liste_plateforme) {
                     if (animation.getLayoutY() < 500) {
                         if (animation.getLayoutY() == plateforme.getLayoutY()) {
-                            if (animation.getLayoutX() >= plateforme.getLayoutX() + plateforme.getFitWidth() || animation.getLayoutX() <= plateforme.getLayoutX()) {
+                            System.out.println("miam" + plateforme.getId());
+                            if (animation.getLayoutX() > plateforme.getLayoutX() + plateforme.getFitWidth() || animation.getLayoutX() < plateforme.getLayoutX()) {
                                 System.out.println(plateforme.getLayoutX() + " " + plateforme.getFitWidth() + "   " + animation.getLayoutX());
+                                System.out.println(plateforme.getLayoutX() + " " + (plateforme.getLayoutX() + plateforme.getFitWidth()));
                                 imageSautIndex = 5;
                                 tlSaut.play();
                             }
@@ -161,8 +177,6 @@ public class GameController {
                 if (tlAttaque.getStatus() != Animation.Status.RUNNING)
                     animation.setImage(spritesCourse.get((imageCourseIndex++) % spritesCourse.size()));
             }
-            animation.setLayoutX(animation.getLayoutX() + distance);
-
         }));
 
         tlSaut.setCycleCount(Animation.INDEFINITE);
@@ -182,6 +196,7 @@ public class GameController {
                     animation.setImage(imageBase);
                     tlSaut.stop();
                     enSaut = false;
+                    mediaPlayerSaut.stop();
                 }else {
                     for (ImageView plateforme : liste_plateforme) {
                         if ((Math.abs(animation.getLayoutY() - plateforme.getLayoutY()) <= 25) && animation.getLayoutX() <= plateforme.getLayoutX() + plateforme.getFitWidth() && animation.getLayoutX() >= plateforme.getLayoutX()) {
@@ -192,6 +207,7 @@ public class GameController {
                             animation.setImage(imageBase);
                             tlSaut.stop();
                             enSaut = false;
+                            mediaPlayerSaut.stop();
                         }
                     }
                 }
@@ -201,15 +217,19 @@ public class GameController {
     public void deplacement(KeyEvent keyEvent) {
         if(keyEvent.getCode() == KeyCode.RIGHT) {
             System.out.println(animation.getLayoutX());
-            distance = 20;
+            distance = 22;
             animation.setScaleX(1);
             tlCourse.play();
         } else if(keyEvent.getCode() == KeyCode.LEFT) {
             System.out.println(animation.getLayoutX());
-            distance = -20;
+            distance = -22;
             animation.setScaleX(-1);
             tlCourse.play();
         } else if(keyEvent.getCode() == KeyCode.UP && tlSaut.getStatus() != Animation.Status.RUNNING) {
+            String pathSaut = "src/sons/bruit saut.mp3";
+            Media mediaSaut = new Media(new File(pathSaut).toURI().toString());
+            mediaPlayerSaut = new MediaPlayer(mediaSaut);
+            mediaPlayerSaut.play();
             enSaut = true;
             imageSautIndex = 0;
             tlSaut.play();
@@ -222,6 +242,10 @@ public class GameController {
                 System.out.println("Yaaa");
                 Tuyau tuyau = searchByImgWater(imgWater,tuyaux);
                 if(tuyau.isFalling()){
+                    String pathRepare = "src/sons/Bruit réparation.mp3";
+                    Media mediaRepare = new Media(new File(pathRepare).toURI().toString());
+                    mediaPlayerRepare = new MediaPlayer(mediaRepare);
+                    mediaPlayerRepare.play();
                     System.out.println("Tching");
                     scheduler.repare(tuyau);
                 }

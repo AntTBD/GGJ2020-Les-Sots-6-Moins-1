@@ -6,8 +6,11 @@ import javafx.animation.Timeline;
 import javafx.scene.CacheHint;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 
+import java.io.File;
 import java.util.ArrayList;
 
 
@@ -17,6 +20,8 @@ public class Tuyau {
     private double heightInit;
     private double layoutYInit;
     private int indice;
+    private MediaPlayer mediaPlayerTuyau;
+    private boolean ecoulement = false;
     private Timeline timeline = new Timeline();
     public Tuyau(ImageView imgWater, ImageView imgSewel) {
         this.imgWater = imgWater;
@@ -39,6 +44,10 @@ public class Tuyau {
                 new KeyFrame(new Duration(200),new KeyValue(imgWater.fitHeightProperty(),heightInit)),
                 new KeyFrame(new Duration(200),new KeyValue(imgSewel.imageProperty(),img))
                 );
+        String pathTuyau = "src/sons/Bruit pop tuyau.wav";
+        Media mediaTuyau = new Media(new File(pathTuyau).toURI().toString());
+        mediaPlayerTuyau = new MediaPlayer(mediaTuyau);
+        mediaPlayerTuyau.play();
         tlAppear.play();
         tlAppear.setOnFinished(event -> {
             timeline.setCycleCount(Animation.INDEFINITE);
@@ -47,6 +56,7 @@ public class Tuyau {
         });
     }
     public void stopWaterFalls(){
+        mediaPlayerTuyau.stop();
         timeline.stop();
         Image img;
         if(imgSewel.getCacheHint().equals(CacheHint.ROTATE)){
