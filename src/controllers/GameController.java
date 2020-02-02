@@ -135,6 +135,7 @@ public class GameController {
             {
                 try {
                     this.endController();
+                    FinController.score = temps*314;
                     Main.sceneLoader.switchTo(SceneLoader.SCENE_FIN);
                 } catch (IOException e) {
                     e.printStackTrace();
