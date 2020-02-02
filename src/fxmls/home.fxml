@@ -23,7 +23,7 @@
          <Font name="Berlin Sans FB Bold" size="50.0" />
       </font>
    </Text>
-   <Text layoutX="708.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quitter" textAlignment="CENTER" wrappingWidth="268.13671875">
+   <Text layoutX="708.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quitter" textAlignment="CENTER" wrappingWidth="268.13671875" onMouseReleased="#quitter">
       <font>
          <Font name="Berlin Sans FB Bold" size="50.0" />
       </font>

@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7437464c-383f-4c5b-9ce0-eba592ed23de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/waterfall_egoux/images/waterfall_egoux_07.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxmls/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,19 +129,13 @@
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -163,12 +147,6 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mains.Main" />
@@ -224,12 +202,24 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <changelist id="7437464c-383f-4c5b-9ce0-eba592ed23de" name="Default Changelist" comment="" />
       <created>1359379246138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -243,6 +233,7 @@
       <workItem from="1580634712768" duration="5392000" />
       <workItem from="1580642551940" duration="1539000" />
       <workItem from="1580644119083" duration="2180000" />
+      <workItem from="1580653768109" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="Switch et font">
       <created>1580511663077</created>
@@ -360,42 +351,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1580653267893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1580653836193">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580647773100" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1580653267893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580653836193" />
+    <state width="1865" height="259" key="GridCell.Tab.0.center" timestamp="1580653836193">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580647773099" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1580653267893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1865" height="259" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580653836193" />
+    <state width="1865" height="259" key="GridCell.Tab.0.left" timestamp="1580653836192">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580647773099" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1580653267893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1865" height="259" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580653836192" />
+    <state width="1865" height="259" key="GridCell.Tab.0.right" timestamp="1580653836193">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580647773100" />
-    <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580603436271">
+    <state width="1865" height="259" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580653836193" />
+    <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580653732021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580649916811" />
-    <state width="1865" height="398" key="GridCell.Tab.1.center" timestamp="1580649916811">
+    <state width="1865" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580653732021" />
+    <state width="1865" height="398" key="GridCell.Tab.1.center" timestamp="1580653732021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="398" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580649916811" />
-    <state width="1865" height="398" key="GridCell.Tab.1.left" timestamp="1580649916811">
+    <state width="1865" height="398" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580653732021" />
+    <state width="1865" height="398" key="GridCell.Tab.1.left" timestamp="1580653732021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="398" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580649916811" />
-    <state width="1865" height="398" key="GridCell.Tab.1.right" timestamp="1580649916811">
+    <state width="1865" height="398" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580653732021" />
+    <state width="1865" height="398" key="GridCell.Tab.1.right" timestamp="1580653732021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1865" height="398" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580649916811" />
+    <state width="1865" height="398" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580653732021" />
     <state x="352" y="21" key="SettingsEditor" timestamp="1580583298405">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
