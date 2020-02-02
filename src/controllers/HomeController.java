@@ -1,9 +1,11 @@
 package controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
+import javafx.scene.text.Text;
 import javafx.util.Duration;
 import mains.Main;
 import mains.SceneLoader;
@@ -12,6 +14,7 @@ import java.io.IOException;
 
 public class HomeController {
     public MediaPlayer mediaPlayerMenu;
+    public Text BoutonRegles;
 
     @FXML
     private void change() throws IOException {
@@ -35,5 +38,10 @@ public class HomeController {
             }
         });
         mediaPlayerMenu.play();
+    }
+
+    @FXML
+    public void VoirRegles(MouseEvent mouseEvent) throws IOException {
+        Main.sceneLoader.switchTo(SceneLoader.SCENE_INSTRUCTIONS);
     }
 }
