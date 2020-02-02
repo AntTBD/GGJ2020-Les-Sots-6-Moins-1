@@ -6,26 +6,87 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Jouable mais pas  de fin et jauge non fonctionnel">
-      <change afterPath="$PROJECT_DIR$/src/images/accueil_jeu.png" afterDir="false" />
+    <list default="true" id="7437464c-383f-4c5b-9ce0-eba592ed23de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fxmls/instructions.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icone cle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/etoile/images/perso_etoile_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/etoile/images/perso_etoile_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/perso/etoile/images/perso_etoile_03.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Scheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/fxmls/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/jauge.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/jauge.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/mains/SceneLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/mains/SceneLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/mains/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Tuyau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Tuyau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/court/images/perso_court_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/dead/images/perso_dead_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/marche/images/perso_marche_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/posé/images/perso_posé_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/repare/images/perso_repare_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/saute/images/perso_saute_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/images/perso/sur_place/images/perso_sur_place_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/mains/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/mains/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxmls/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxmls/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxmls/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/court/images/perso_court_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/dead/images/perso_dead_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/marche/images/perso_marche_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/posé/images/perso_posé_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/repare/images/perso_repare_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/saute/images/perso_saute_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/perso/sur_place/images/perso_sur_place_06.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mains/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mains/SceneLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/SceneLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mains/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +185,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -133,16 +194,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aurélien\Documents\GitHub\GGJ2020-Les-Sots-6-Moins-1\src\images" />
+      <recent name="C:\Users\Aurélien\Documents\GitHub\GGJ2020-Les-Sots-6-Moins-1\src\sons" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
+      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\images" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
       <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fxmls" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Aurélien\Documents\GitHub\GGJ2020-Les-Sots-6-Moins-1\src\sons" />
-      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\mains" />
-      <recent name="D:\JavaProject\GGJ2020-Les-Sots-6-Moins-1\src\fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -313,7 +375,8 @@
     <MESSAGE value="Animation" />
     <MESSAGE value="Level changer" />
     <MESSAGE value="Jouable mais pas  de fin et jauge non fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jouable mais pas  de fin et jauge non fonctionnel" />
+    <MESSAGE value="Ajout jauge, chrono et condition défaite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout jauge, chrono et condition défaite" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="115" key="#Inspections" timestamp="1580580521788">
@@ -340,31 +403,36 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580577778975" />
-    <state x="544" y="0" key="CommitChangelistDialog2" timestamp="1580603389893">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="610" y="76" key="CommitChangelistDialog2" timestamp="1580645116210">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="610" y="76" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580645116210" />
     <state x="544" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580603389893" />
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1580582427179">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom" timestamp="1580646196052">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1580646891013">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580646196052" />
-    <state width="1865" height="261" key="GridCell.Tab.0.center" timestamp="1580646196051">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580646891013" />
+    <state width="1865" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580639993991" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1580646891013">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580646196051" />
-    <state width="1865" height="261" key="GridCell.Tab.0.left" timestamp="1580646196051">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580646891013" />
+    <state width="1865" height="261" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580639993991" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1580646891013">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580646196051" />
-    <state width="1865" height="261" key="GridCell.Tab.0.right" timestamp="1580646196052">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580646891013" />
+    <state width="1865" height="261" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580639993990" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1580646891013">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580646196052" />
-    <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580642506994">
+    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580646891013" />
+    <state width="1865" height="261" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580639993991" />
+    <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580603436271">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1865" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580642506994" />

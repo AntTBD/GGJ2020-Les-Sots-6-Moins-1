@@ -12,14 +12,18 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.util.Duration;
+import mains.Main;
+import mains.SceneLoader;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class GameController {
-    public static final int MAX_Y_JAUGE = 206;
+    public static final int MAX_Y_JAUGE = 224;
     private static ArrayList<Image> spriteWaterfalls = new ArrayList<>(Arrays.asList(new Image("images/waterfall/W1001.png"), new Image("images/waterfall/W1002.png"), new Image("images/waterfall/W1003.png")
             , new Image("images/waterfall/W1004.png")
             , new Image("images/waterfall/W1005.png")
@@ -50,6 +54,8 @@ public class GameController {
     public ImageView tuyauMidRight;
     public static Image imageBase = new Image("images/perso/sur_place/images/perso_sur_place_01.png");
     public Rectangle jauge;
+    public Text timer;
+    private int temps = 0;
     private int imageCourseIndex = 0;
     private int imageSautIndex = 0;
     private int imageGravIndex = 0;
@@ -73,11 +79,19 @@ public class GameController {
     private int compteur = 0;
 
     public void initialize() {
+        timer.setText("0");
         String pathJeu = "src/sons/Musique InGame.mp3";
         Media mediaJeu = new Media(new File(pathJeu).toURI().toString());
         mediaPlayerJeu = new MediaPlayer(mediaJeu);
         mediaPlayerJeu.setOnEndOfMedia(() -> mediaPlayerJeu.seek(Duration.ZERO));
         mediaPlayerJeu.play();
+
+        Timeline temps = new Timeline(new KeyFrame(
+                Duration.millis(1000),
+                ae -> avancerTemps()));
+        temps.setCycleCount(Animation.INDEFINITE);
+        temps.play();
+
         tuyaux.addAll(Arrays.asList(
                 new Tuyau(waterBotRight, tuyauBotRight), new Tuyau(waterTopRight, tuyauTopRight)
                 , new Tuyau(waterTopMid, tuyauTopMid), new Tuyau(waterMid, tuyauMid)
@@ -110,10 +124,18 @@ public class GameController {
             } else {
                 newHeight = nbFalling * 0.5 + jauge.getHeight();
             }
-            newLayout = MAX_Y_JAUGE - newHeight;
-            if (newHeight <= MAX_Y_JAUGE - 9 && newHeight > 0) {
+            if (newHeight <= MAX_Y_JAUGE-30 && newHeight > 0) {
                 jauge.setHeight(newHeight);
                 jauge.setLayoutY(newLayout);
+            }
+            //Condition défaite
+            if(newHeight == MAX_Y_JAUGE-30)
+            {
+                try {
+                    Main.sceneLoader.switchTo(SceneLoader.SCENE_FIN);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
 
         }));
@@ -234,6 +256,11 @@ public class GameController {
         }));
     }
 
+    public void avancerTemps()
+    {
+        temps+=1;
+        timer.setText(Integer.toString(temps));
+    }
     public void deplacement(KeyEvent keyEvent) {
         if (keyEvent.getCode() == KeyCode.RIGHT) {
             distance = 22;
