@@ -19,7 +19,7 @@ public class Scheduler {
         if(!tuyaux.isEmpty()) {
             ecoulement++;
             if(ecoulement==1){
-                String pathEau = "src/sons/bruit eau.mp3";
+                String pathEau = "src/sons/bruit_eau.mp3";
                 Media mediaEau = new Media(new File(pathEau).toURI().toString());
                 mediaPlayerEau = new MediaPlayer(mediaEau);
                 mediaPlayerEau.play();

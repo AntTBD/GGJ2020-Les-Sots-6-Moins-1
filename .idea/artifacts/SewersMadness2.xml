@@ -1,15 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="GGJ2020-Les-Sots-6-Moins-1">
-    <output-path>$PROJECT_DIR$/out/artifacts/GGJ2020_Les_Sots_6_Moins_1</output-path>
+  <artifact type="javafx" name="SewersMadness2">
+    <output-path>$PROJECT_DIR$/out/artifacts/SewersMadness2</output-path>
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="mains.Main" />
         <option name="description" value="" />
+        <option name="height" value="675" />
         <option name="htmlPlaceholderId" value="" />
         <option name="nativeBundle" value="all" />
         <option name="title" value="" />
         <option name="vendor" value="" />
         <option name="version" value="" />
+        <option name="width" value="1200" />
       </options>
     </properties>
     <root id="root">

@@ -91,7 +91,7 @@ public class GameController {
     private int compteur = 0;
     public void initialize() {
         timer.setText("0");
-        String pathJeu = "src/sons/Musique InGame.mp3";
+        String pathJeu = "src/sons/Musique_InGame.mp3";
         Media mediaJeu = new Media(new File(pathJeu).toURI().toString());
         mediaPlayerJeu = new MediaPlayer(mediaJeu);
         mediaPlayerJeu.setOnEndOfMedia(() -> mediaPlayerJeu.seek(Duration.ZERO));
@@ -290,7 +290,7 @@ public class GameController {
             animation.setScaleX(-1);
             tlCourse.play();
         } else if (keyEvent.getCode() == KeyCode.UP && tlSaut.getStatus() != Animation.Status.RUNNING) {
-            String pathSaut = "src/sons/bruit saut.mp3";
+            String pathSaut = "src/sons/bruit_saut.mp3";
             Media mediaSaut = new Media(new File(pathSaut).toURI().toString());
             mediaPlayerSaut = new MediaPlayer(mediaSaut);
             mediaPlayerSaut.play();
@@ -303,7 +303,7 @@ public class GameController {
             if (imgWater != null) {
                 Tuyau tuyau = searchByImgWater(imgWater, tuyaux);
                 if (tuyau.isFalling()) {
-                    String pathRepare = "src/sons/Bruit réparation.mp3";
+                    String pathRepare = "src/sons/Bruit_reparation.mp3";
                     Media mediaRepare = new Media(new File(pathRepare).toURI().toString());
                     mediaPlayerRepare = new MediaPlayer(mediaRepare);
                     mediaPlayerRepare.play();

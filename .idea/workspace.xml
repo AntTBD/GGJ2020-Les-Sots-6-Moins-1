@@ -7,8 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7437464c-383f-4c5b-9ce0-eba592ed23de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GGJ2020_Les_Sots_6_Moins_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/GGJ2020_Les_Sots_6_Moins_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Scheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/classes/Tuyau.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GGJ2020-Les-Sots-6-Moins-1/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Tuyau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Tuyau.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/Bruit pop tuyau.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/Bruit_pop_tuyau.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/Bruit réparation.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/Bruit_reparation.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/Musique InGame.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/Musique_InGame.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/Musique fin.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/Musique_fin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/bruit eau.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/bruit_eau.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/bruit saut.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/bruit_saut.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sons/musique menu.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/sons/musique_menu.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +124,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sons" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -234,7 +249,7 @@
       <workItem from="1580642551940" duration="1539000" />
       <workItem from="1580644119083" duration="2180000" />
       <workItem from="1580653768109" duration="126000" />
-      <workItem from="1580653923278" duration="31000" />
+      <workItem from="1580653923278" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="Switch et font">
       <created>1580511663077</created>
@@ -323,6 +338,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="452" y="115" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1580580521788" />
+    <state x="452" y="115" key="#Project_Structure" timestamp="1580654175212">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="452" y="115" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1580654175212" />
     <state x="694" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580499630191">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -331,10 +350,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="721" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1580587470553" />
-    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580583275593">
+    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580654388970">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580583275593" />
+    <state x="667" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580654388970" />
     <state x="102" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580579164539">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -352,26 +371,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580582427179" />
-    <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1580653893939">
+    <state x="730" y="231" key="FileChooserDialogImpl" timestamp="1580654620124">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="730" y="231" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1580654620124" />
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom" timestamp="1580654525637">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580653893939" />
-    <state width="1865" height="259" key="GridCell.Tab.0.center" timestamp="1580653893939">
+    <state width="1865" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1580654525637" />
+    <state width="1865" height="259" key="GridCell.Tab.0.center" timestamp="1580654525637">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="259" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580653893939" />
-    <state width="1865" height="259" key="GridCell.Tab.0.left" timestamp="1580653893939">
+    <state width="1865" height="259" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1580654525637" />
+    <state width="1865" height="259" key="GridCell.Tab.0.left" timestamp="1580654525636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="259" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580653893939" />
-    <state width="1865" height="259" key="GridCell.Tab.0.right" timestamp="1580653893939">
+    <state width="1865" height="259" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1580654525636" />
+    <state width="1865" height="259" key="GridCell.Tab.0.right" timestamp="1580654525637">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580653267893" />
-    <state width="1865" height="259" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580653893939" />
+    <state width="1865" height="259" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580654525637" />
     <state width="1865" height="398" key="GridCell.Tab.1.bottom" timestamp="1580653732021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -388,10 +411,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1865" height="398" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1580653732021" />
-    <state x="352" y="21" key="SettingsEditor" timestamp="1580583298405">
+    <state x="352" y="21" key="SettingsEditor" timestamp="1580654624184">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="352" y="21" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580583298405" />
+    <state x="352" y="21" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580654624184" />
     <state x="739" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580635001855">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -43,7 +43,7 @@ public class Tuyau {
                 new KeyFrame(new Duration(200),new KeyValue(imgWater.fitHeightProperty(),heightInit)),
                 new KeyFrame(new Duration(200),new KeyValue(imgSewel.imageProperty(),img))
                 );
-        String pathTuyau = "src/sons/Bruit pop tuyau.wav";
+        String pathTuyau = "src/sons/Bruit_pop_tuyau.wav";
         Media mediaTuyau = new Media(new File(pathTuyau).toURI().toString());
         mediaPlayerTuyau = new MediaPlayer(mediaTuyau);
         mediaPlayerTuyau.play();

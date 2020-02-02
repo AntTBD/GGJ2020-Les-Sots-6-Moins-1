@@ -29,7 +29,7 @@ public class HomeController {
 
     @FXML
     public void initialize(){
-        String pathMenu = "src/sons/musique menu.mp3";
+        String pathMenu = "src/sons/musique_menu.mp3";
         Media mediaMenu = new Media(new File(pathMenu).toURI().toString());
         mediaPlayerMenu = new MediaPlayer(mediaMenu);
         mediaPlayerMenu.setOnEndOfMedia(new Runnable() {
