@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-
 
 <AnchorPane prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FinController">
    <children>
@@ -13,15 +14,15 @@
       </ImageView>
       <ImageView fx:id="perso" fitHeight="150.0" fitWidth="200.0" layoutX="195.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/perso/dead/images/perso_dead_04.png" />
+            <Image url="@../images/perso/etoile/images/perso_etoile_01.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="eau" fitHeight="211.0" fitWidth="81.0" layoutX="210.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="eau" fitHeight="211.0" fitWidth="81.0" layoutX="224.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/waterfall/W1001.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="252.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/tuyaux/tuyau-Vert-bad.png" />
          </image>
@@ -47,7 +48,7 @@
             <Image url="@../images/pancarte.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="420.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="270.13671875">
+      <Text fx:id="texte_score" fill="WHITE" layoutX="267.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="532.13671875">
          <font>
             <Font name="System Bold" size="67.0" />
          </font>
