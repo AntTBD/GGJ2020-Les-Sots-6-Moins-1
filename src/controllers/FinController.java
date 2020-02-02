@@ -42,7 +42,7 @@ public class FinController {
     ));
     public void initialize() {
 
-        String pathFin = "src/sons/Musique fin.mp3";
+        String pathFin = "src/sons/Musique_fin.mp3";
         Media mediaFin = new Media(new File(pathFin).toURI().toString());
         mediaPlayerFin = new MediaPlayer(mediaFin);
         mediaPlayerFin.setOnEndOfMedia(() -> mediaPlayerFin.seek(Duration.ZERO));
